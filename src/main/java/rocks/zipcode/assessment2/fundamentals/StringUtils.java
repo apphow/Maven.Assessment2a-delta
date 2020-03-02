@@ -44,6 +44,8 @@ public class StringUtils {
         return ((string != null)
                 && (!string.equals(""))
                 && (string.chars().allMatch(Character::isLetter)));
+
+
     }
 
 

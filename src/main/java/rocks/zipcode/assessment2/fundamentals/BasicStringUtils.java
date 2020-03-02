@@ -57,7 +57,7 @@ public class BasicStringUtils {
          */
         public static String removeCharacters (String string, String charactersToRemove){
 
-            return null;
+            return string.substring(0, Integer.parseInt(charactersToRemove)) + string.substring(Integer.parseInt(charactersToRemove + 1));
 
         }
 
