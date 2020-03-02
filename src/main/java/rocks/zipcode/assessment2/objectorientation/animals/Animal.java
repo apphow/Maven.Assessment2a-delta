@@ -8,8 +8,9 @@ import rocks.zipcode.assessment2.objectorientation.Person;
  * @ATTENTION_TO_STUDENTS - Ensure that you have completed the `Person` class before attempting this class.
  */
 public class Animal {
-
+Animal animal = new Animal();
     public Animal() {
+        Animal animal = new Animal();
 
     }
     private Long id;
@@ -23,6 +24,7 @@ public class Animal {
      * @param owner - owner of animal
      */
     public Animal(Long id, Person owner) {
+        Animal animal = new Animal();
         this.id = id;
         this.owner = owner;
     }
