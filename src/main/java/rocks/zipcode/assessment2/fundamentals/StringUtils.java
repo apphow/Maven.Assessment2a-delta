@@ -36,15 +36,24 @@ public class StringUtils {
      * @return - true if string only contains alpha characters
      */
     public static Boolean isAlphaString(String string) {
-        return null;
+
+        return (!string.equals(""))
+                && (string != null)
+                && (string.matches("^[a-zA-Z]*$"));
     }
+
 
     /**
      * @param string - string to be evaluated
      * @return - true if string only contains numeric characters
      */
     public static Boolean isNumericString(String string) {
-        return null;
+
+        if(string.matches("[0-9]+") && string.length() > 2) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     /**
@@ -52,6 +61,6 @@ public class StringUtils {
      * @return - true if string only contains special characters
      */
     public static Boolean isSpecialCharacterString(String string) {
-        return null;
+       return null;
     }
 }
