@@ -8,12 +8,15 @@ import rocks.zipcode.assessment2.objectorientation.Person;
  * @ATTENTION_TO_STUDENTS - Ensure that you have completed the `Person` class before attempting this class.
  */
 public class Animal {
-    private Long id;
-    private Person owner;
 
     public Animal() {
 
     }
+    private Long id;
+    private Person owner;
+    private Address address;
+
+
 
     /**
      * @param id - id of animal
@@ -25,20 +28,21 @@ public class Animal {
     }
 
     public Long getId() {
-        return this.id;
+        return id;
     }
 
     public void setId(Long id) {
+        this.id = id;
     }
 
     public Person getOwner() {
-        return null;
+        return owner;
     }
 
-    public void setOwner(Person owner) {
+    public void setOwner(Person owner) { this.owner = owner;
     }
 
     public Address getAddress() {
-        return null;
+        return address;
     }
 }
